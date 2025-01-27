@@ -17,7 +17,7 @@
     <meta name="theme-color" content="#2c3e50" />
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
-    <meta name="canonical" content="https://horariovercelapp.vercel.app/" />
+    <meta name="canonical" content="https://horarioagora.vercel.app/" />
     <meta name="x-robots-tag" content="all" />
 
     <!-- Título da Página -->
@@ -66,7 +66,29 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- CSS Interno -->
     <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Horário Agora",
+        "url": "https://horarioagora.vercel.app/",
+        "description": "Aplicação web que exibe o horário atual em tempo real.",
+        "publisher": {
+          "@type": "Person",
+          "name": "Luís Antonio Souza Teixeira"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://horarioagora.vercel.app/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
   </head>
 
   <body>
