@@ -1,0 +1,67 @@
+.clock-container {
+  background: var(--gradient-primary);
+  background-size: 200% 200%;
+  animation: rotateGradient 15s infinite;
+  padding: var(--spacing-lg);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform var(--transition-normal);
+}
+
+.clock-container:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg), 0 0 30px rgba(52, 152, 219, 0.3);
+}
+
+.clock-title {
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: 2px;
+  animation: fadeIn var(--transition-slow);
+}
+
+.clock-display {
+  font-family: 'Digital-7', monospace;
+  color: var(--text-primary);
+  text-shadow: 0 0 10px var(--accent-color);
+  animation: glowText 2s infinite;
+}
+
+.clock-icon {
+  color: var(--accent-color);
+  animation: pulse 2s infinite;
+}
+
+.date-display {
+  color: var(--text-secondary);
+  font-weight: 300;
+  letter-spacing: 1px;
+  animation: fadeIn var(--transition-slow);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .clock-display {
+    font-size: 3rem !important;
+  }
+
+  .date-display {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .clock-container {
+    padding: var(--spacing-md);
+  }
+
+  .clock-display {
+    font-size: 2.5rem !important;
+  }
+
+  .date-display {
+    font-size: 1rem !important;
+  }
+}
