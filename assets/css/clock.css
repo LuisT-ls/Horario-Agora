@@ -1,3 +1,7 @@
+#clock {
+  color: var(--text-primary);
+}
+
 .clock-container {
   background: var(--gradient-primary);
   background-size: 200% 200%;

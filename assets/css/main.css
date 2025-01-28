@@ -1,7 +1,7 @@
 /* Importação dos módulos */
-@import url('_variables.css');
-@import url('_animations.css');
-@import url('_clock.css');
+@import url('variables.css');
+@import url('animations.css');
+@import url('clock.css');
 
 /* Reset e estilos globais */
 * {
@@ -30,6 +30,10 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.text-muted {
+  color: var(--text-secondary) !important;
 }
 
 /* Ajustes de acessibilidade */
